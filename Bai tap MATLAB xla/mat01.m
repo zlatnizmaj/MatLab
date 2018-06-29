@@ -44,7 +44,7 @@ inv(D)
 D^(-1)
  % Doc va ghi anh
  inImg = imread('barca1.jpg'); %read image
- imwrite (inImg1l, 'image02.jpg', 'jpg') %write image JPEG
+ imwrite (inImg, 'image02.jpg', 'jpg') %write image JPEG
  imfinfo('barca1.jpg')
  
  %hien thi anh
