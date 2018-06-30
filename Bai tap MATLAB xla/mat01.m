@@ -28,7 +28,7 @@ E = plus(A,C)
 A-C
 minus(A,C)
 
-% nhan tung phan tu cua hai ma trang
+% nhan tung phan tu cua hai ma tran
 E = times(A,C); 
 E = A.*C
 % nhan ma tran
@@ -43,10 +43,23 @@ A'
 inv(D)
 D^(-1)
  % Doc va ghi anh
- inImg = imread('barca1.jpg'); %read image
- imwrite (inImg, 'image02.jpg', 'jpg') %write image JPEG
- imfinfo('barca1.jpg')
+%  inImg = imread('barca1.jpg'); %read image
+%  imwrite (inImg, 'image02.jpg', 'jpg') %write image JPEG
+%  imfinfo('barca1.jpg')
  
  %hien thi anh
- imshow(inImg) %display image
-
+%  imshow(inImg) %display image
+ clear all
+ % chuyen kieu anh, chuyen anh mau sang xam va hien thi cac kenh mau
+ inImgL = imread('lena512color.tiff'); %read image
+%  imgLGray = rgb2gray(inImgL);
+%  subplot(2,1,1);
+%  imshow(inImgL);
+%  subplot(2,1,2);
+%  imshow(imgLGray);
+%  inImgL(:,:,2:3)= 0;
+ cRed = inImgL(:,:,1)
+ imshow(cRed);
+%  subplot(2,2,1); 
+%  imshow(inImgL); 
+title('Red')
