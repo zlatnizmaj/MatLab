@@ -4,4 +4,6 @@ function H = butterworthlp(sx, sy, d0, n)
 % n: order of butter filter
 hr = (sx-1)/2;
 hc = (sy-1)/2;
+[x,y] = meshgrid(-hc:hc, -hr:hr);
+mg = sqrt(x.
 
